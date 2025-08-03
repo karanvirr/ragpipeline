@@ -100,3 +100,4 @@ websockets==15.0.1
 wheel==0.45.1
 win_inet_pton @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/win_inet_pton_1729038644686/work
 zstandard @ file:///C:/b/abs_31t8xmrv_h/croot/zstandard_1731356578015/work
+mangum
