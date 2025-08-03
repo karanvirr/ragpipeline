@@ -12,6 +12,7 @@ from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+from mangum import Mangum
 
 load_dotenv()
 
@@ -126,3 +127,5 @@ async def run_rag_pipeline(payload: RequestPayload):
 @app.get("/", include_in_schema=False)
 def root():
     return {"message": "API is running. Send POST requests to /hackrx/run"}
+
+handler = Magnum(app)
